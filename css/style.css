@@ -31,11 +31,13 @@ body {
 
 .menu {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
     gap: 30px;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
     align-items: center;
     font-size: 22px;
+    
 }
 
 .menu a {
@@ -59,18 +61,20 @@ body {
 }
 
 .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 10px; }
-.hero span { color: #4facfe; }
+.hero span {font-size: larger; }
+.hero p { font-size: 30px;}
 
 .btn-primary {
     padding: 15px 40px;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 10px;
     border: none;
     background: #fff;
     color: var(--primary);
     cursor: pointer;
     transition: var(--transition);
+    font-size: 15px;
 }
 
 .btn-primary:hover { transform: scale(1.05); background: #f0f0f0; }
