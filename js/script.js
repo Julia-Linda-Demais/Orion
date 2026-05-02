@@ -18,3 +18,29 @@ btnEsq.addEventListener('click', () => {
   index = (index - 1 + slides.length) % slides.length;
   mostrarProjetos();
 });
+
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+//cards da equipe
+const containerCards = document.querySelector('.container-cards');
+const btnDirEquipe = document.querySelector('.direita-equipe');
+const btnEsqEquipe = document.querySelector('.esquerda-equipe');
+
+btnDirEquipe.addEventListener('click', () => {
+  containerCards.scrollBy({
+    left: 520,
+    behavior: "smooth"
+  });
+});
+
+btnEsqEquipe.addEventListener('click', () => {
+  containerCards.scrollBy({
+    left: -520,
+    behavior: "smooth"
+  });
+});
